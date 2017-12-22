@@ -1,0 +1,12 @@
+[user]
+  name = asyks
+  email = aaron@aaronsykes.com
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[core]
+  editor = vim
+[push]
+  default = current
