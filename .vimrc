@@ -24,7 +24,7 @@ set expandtab
 
 " set filetype specific tab behavior
 au FileType html setl sw=2 sts=2 et
-au FileType html setl sw=2 sts=2 et
+au FileType css setl sw=2 sts=2 et
 au FileType javascript setl sw=2 sts=2 et
 au FileType json setl sw=2 sts=2 et
 au FileType python setl sw=4 sts=4 et
