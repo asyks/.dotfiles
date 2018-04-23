@@ -6,24 +6,27 @@ fg_cyan=%{$'\e[0;36m'%}
 # Prompt
 PROMPT="${fg_lgreen}%n@%m[${fg_cyan}%1~${fg_lgreen}] $ ${fg_white}"
  
-## Autoload zsh prompt 
+# Autoload prompt
 autoload -U compinit
 compinit
+
+# Localization
+export LC_ALL=$LANG
  
-## Basic options
+# Basic options
 setopt autocd
 setopt auto_resume
 setopt extendedglob
 setopt completeinword
 unsetopt caseglob
  
-## ZSH auto complete options
+# Auto complete options
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
  
-## History
+# History
 HISTFILE=~/.zsh-histfile
 HISTSIZE=5000
 SAVEHIST=5000
