@@ -1,14 +1,10 @@
-# Colors
-fg_white=%{$'\e[1;37m'%}
-fg_lgreen=%{$'\e[1;32m'%}
-fg_cyan=%{$'\e[0;36m'%}
+# Autoload prompt
+autoload -U promptinit
+promptinit
 
 # Prompt
-PROMPT="${fg_lgreen}%n@%m[${fg_cyan}%1~${fg_lgreen}] $ ${fg_white}"
- 
-# Autoload prompt
-autoload -U compinit
-compinit
+PROMPT="%F{green}%n@%m%f %F{cyan}%1~%f %F{green}# %f"
+RPROMPT="%F{green}[%D.%*]%f"
 
 # Localization
 export LC_ALL=$LANG
