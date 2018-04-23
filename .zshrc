@@ -2,6 +2,9 @@
 autoload -U promptinit
 promptinit
 
+# Turn off MULTIOS
+unsetopt MULTIOS
+
 # Prompt
 PROMPT="%F{green}%n@%m%f %F{cyan}%1~%f %F{green}# %f"
 RPROMPT="%F{green}[%D.%*]%f"
