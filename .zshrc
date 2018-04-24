@@ -45,3 +45,10 @@ alias grep='grep --color'
 
 # Ack Aliases
 alias ack='ack-grep'
+
+# Source profile config file if available
+PROFILE_CONFIG_FILE=$HOME/.profile
+if [ -f $PROFILE_CONFIG_FILE ]
+then
+  source $PROFILE_CONFIG_FILE
+fi
