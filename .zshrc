@@ -8,9 +8,6 @@ unsetopt MULTIOS
 # Prompt
 PROMPT="%F{green}%n@%m%f %F{cyan}%1~%f %F{green}# %f"
 RPROMPT="%F{green}[%D.%*]%f"
-
-# Localization
-export LC_ALL=$LANG
  
 # Basic options
 setopt autocd
@@ -32,6 +29,9 @@ SAVEHIST=5000
 setopt incappendhistory
 setopt sharehistory
 setopt extendedhistory
+
+# Localization
+LC_ALL=$LANG
  
 # Aliases
 alias ls='ls'
