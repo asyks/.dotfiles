@@ -10,6 +10,10 @@ export AIRSHIP_PATH=/Users/aaronsykes/ua/airship
 export CHEF_PATH=/Users/aaronsykes/ua/chef_configs
 export GREYHOUND_PATH=/Users/aaronsykes/ua/greyhound
 
+# greyhound configuration vars
+export BOTO_CONFIG=$GREYHOUND_PATH/ansible/.boto
+export AWS_REGION='us-west-2'
+
 # Airship Artifactory
 export ARTIFACTORY_USERNAME='aaron.sykes'
 export ARTIFACTORY_API_KEY=''
