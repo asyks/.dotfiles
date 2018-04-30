@@ -6,7 +6,7 @@ promptinit
 unsetopt MULTIOS
 
 # Prompt
-PROMPT="%F{green}%n@%m%f %F{cyan}%1~%f %F{green}# %f"
+PROMPT="%F{green}%n%f %F{cyan}%1~%f %F{green}# %f"
 RPROMPT="%F{green}[%D.%*]%f"
  
 # Basic options
