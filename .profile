@@ -9,6 +9,7 @@ export UA_REPOS_PATH=/Users/aaronsykes/ua/
 export AIRSHIP_PATH=/Users/aaronsykes/ua/airship
 export CHEF_PATH=/Users/aaronsykes/ua/chef_configs
 export GREYHOUND_PATH=/Users/aaronsykes/ua/greyhound
+export TAXICAB_PATH=/Users/aaronsykes/ua/taxicab
 
 # greyhound configuration vars
 export BOTO_CONFIG=$GREYHOUND_PATH/ansible/.boto
