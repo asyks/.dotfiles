@@ -14,6 +14,9 @@ export TAXICAB_PATH=/Users/aaronsykes/ua/taxicab
 # greyhound configuration vars
 export BOTO_CONFIG=$GREYHOUND_PATH/ansible/.boto
 export AWS_REGION='us-west-2'
+export AWS_OUTPUT='json'
+export AWS_DEFAULT_REGION=$AWS_REGION
+export AWS_DEFAULT_OUTPUT=$AWS_OUTPUT
 
 # Airship Artifactory
 export ARTIFACTORY_USERNAME='aaron.sykes'
