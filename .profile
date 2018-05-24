@@ -1,9 +1,11 @@
 # (osx only) homebrew PATH stuff
 PATH=/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 PATH=/usr/local/share/python:${PATH}
-PATH=/usr/local/Cellar/python/2.7.5/bin:${PATH}
-PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+PATH=/usr/local/bin:/bin:/usr/bin:${PATH}
 export PATH
+
+# (osx only) python Path stuff
+export PYTHONPATH=/usr/local/lib/python
 
 # (osx only, airship only) project paths
 export UA_REPOS_PATH=/Users/aaronsykes/ua/
