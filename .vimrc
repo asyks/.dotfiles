@@ -14,7 +14,7 @@ set t_Co=256
 set number
 set relativenumber
 set nowrap
-colorscheme delek
+colorscheme asyks
 hi Search term=standout ctermfg=0 ctermbg=11
 
 " set default tab behavior
@@ -50,3 +50,6 @@ let g:netrw_liststyle=3
 " custom shortcuts
 map <F8> :tabp<CR>
 map <F9> :tabn<CR>
+
+map <F5> :! pylint %<Enter>
+map <F6> :! mypy --py2 %<Enter>
