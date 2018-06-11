@@ -44,7 +44,10 @@ alias vi='vim'
 alias grep='grep --color'
 
 # Ack Aliases
-alias ack='ack-grep'
+if [[ $(uname) == 'Linux' ]]
+then
+  alias ack='ack-grep'
+fi
 
 # Source profile config file if available
 PROFILE_CONFIG_FILE=$HOME/.profile
