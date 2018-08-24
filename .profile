@@ -21,8 +21,10 @@ export AWS_DEFAULT_REGION='us-west-2'
 export AWS_DEFAULT_OUTPUT='json'
 
 # Airship Artifactory
-export ARTIFACTORY_USERNAME='aaron.sykes'
+export ARTIFACTORY_USER='aaron.sykes'
+export ARTIFACTORY_USERNAME=$ARTIFACTORY_USER  # ensures both web and java tooling get along
 export ARTIFACTORY_API_KEY=''
+export PIP_INDEX_URL=https://$ARTIFACTORY_USER:$ARTIFACTORY_API_KEY@urbanairship.jfrog.io/urbanairship/api/pypi/pypi/simple
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/aaron.sykes/Downloads/google-cloud-sdk/path.zsh.inc' ];
