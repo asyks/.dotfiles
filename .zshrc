@@ -43,7 +43,14 @@ alias vi='vim'
 alias grep='grep --color'
 
 # Source profile config file if available
-PROFILE_CONFIG_FILE=$HOME/.profile
+if [[ $(uname) == 'Linux' ]]
+then
+    PROFILE_CONFIG_FILE=$HOME/.l.profile
+elif [[ $(uname) == 'Darwin' ]]
+then
+    PROFILE_CONFIG_FILE=$HOME/.d.profile
+fi
+
 if [ -f $PROFILE_CONFIG_FILE ]
 then
   source $PROFILE_CONFIG_FILE
