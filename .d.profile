@@ -12,6 +12,7 @@ export UA_REPOS_PATH=$HOME/ua/
 export AIRSHIP_PATH=$HOME/ua/airship
 export CHEF_PATH=$HOME/ua/chef_configs
 export BIZSYS_ANSIBLE_PATH=$HOME/ua/bizsys-ansible-playbooks
+export BIZSYS_INFRASTRUCTURE_PATH=$HOME/ua/bizsys-aws-infrastructure
 export GREYHOUND_PATH=$HOME/ua/greyhound
 export TAXICAB_PATH=$HOME/ua/taxicab
 
