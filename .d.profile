@@ -18,7 +18,7 @@ export GREYHOUND_PATH=$HOME/ua/greyhound
 export TAXICAB_PATH=$HOME/ua/taxicab
 
 # greyhound configuration vars
-DEFAULT_AWS_PROFILE='greyhound'
+DEFAULT_AWS_PROFILE='default'
 export AWS_PROFILE=$DEFAULT_AWS_PROFILE
 export AWS_DEFAULT_REGION='us-west-2'
 export AWS_DEFAULT_OUTPUT='json'
