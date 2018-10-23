@@ -18,8 +18,8 @@ colorscheme asyks
 hi Search term=standout ctermfg=0 ctermbg=11
 
 " set default tab behavior
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " set filetype specific tab behavior
@@ -44,8 +44,12 @@ set nocursorline
 execute pathogen#infect()
 execute pathogen#helptags()
 
-" set a default explorer mode style
+" explorer mode settings
 let g:netrw_liststyle=3
+let g:netrw_banner=0
+let g:netrw_browse_split=2
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
 
 " custom shortcuts
 map <F8> :tabp<CR>
