@@ -55,3 +55,9 @@ if [ -f $PROFILE_CONFIG_FILE ]
 then
   source $PROFILE_CONFIG_FILE
 fi
+
+# Pyenv setup
+if command -v pyenv 1>/dev/null 2>&1;
+then
+  eval "$(pyenv init -)"
+fi
