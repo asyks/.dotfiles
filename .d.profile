@@ -22,6 +22,7 @@ DEFAULT_AWS_PROFILE='default'
 export AWS_PROFILE=$DEFAULT_AWS_PROFILE
 export AWS_DEFAULT_REGION='us-west-2'
 export AWS_DEFAULT_OUTPUT='json'
+export ANSIBLE_HOST_KEY_CHECKING=False
 
 # Airship Artifactory
 export ARTIFACTORY_USER='aaron.sykes'
