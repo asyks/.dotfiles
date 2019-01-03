@@ -44,3 +44,5 @@ fi
 alias k='kubectl'
 alias kstag='k --context=gke_ua-ops-transitional-stag_us-east1-b_gke-1-common-cluster-us-east1 --namespace=web'
 alias kprod='k --context=gke_ua-ops-transitional-prod_us-east1-b_gke-1-common-cluster-us-east1 --namespace=web'
+# VSCodeVim key-repeating stuff
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
