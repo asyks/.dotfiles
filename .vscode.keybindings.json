@@ -1,0 +1,5 @@
+{
+  "key": "enter",
+  "command": "cursorHome",
+  "when": "workbench.action.quickOpen"
+},
