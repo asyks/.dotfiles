@@ -1,5 +1,7 @@
-{
-  "key": "enter",
-  "command": "cursorHome",
-  "when": "workbench.action.quickOpen"
-},
+[
+  {
+    "key": "f7",
+    "command": "python.runLinting",
+    "when": ""
+  }
+]

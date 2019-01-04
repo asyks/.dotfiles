@@ -1,4 +1,5 @@
 {
+    "editor.minimap.enabled": false,
     "files.exclude": {
       ".vscode/": true,
       ".mypy_cache/": true
@@ -9,6 +10,7 @@
     },
     "python.pythonPath": "${env:HOME}/.pyenv/shims/python",
     "python.linting.enabled": true,
+    "python.linting.lintOnSave": false,
     "python.linting.flake8Enabled": true,
     "python.linting.pep8Enabled": true,
     "python.linting.mypyEnabled": true,
