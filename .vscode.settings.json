@@ -16,12 +16,13 @@
   "python.linting.mypyEnabled": true,
   "python.linting.mypyPath": "/usr/local/bin/mypy",
   "python.linting.mypyArgs": [
-    "--quick-and-dirty"
+    "--quick-and-dirty",
+    "--ignore-missing-imports"
   ],
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "${env:HOME}/Library/Python/3.7/bin/black",
   "[python]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.tabSize": 4,
     "editor.rulers": [
       88
@@ -29,5 +30,7 @@
   },
   "vim.hlsearch": true,
   "window.zoomLevel": 0,
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false
 }
