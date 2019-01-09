@@ -9,10 +9,16 @@
     "editor.tabSize": 2
   },
   "python.pythonPath": "${env:HOME}/.pyenv/shims/python",
+  "python.jediEnabled": false,
   "python.linting.enabled": true,
-  "python.linting.lintOnSave": false,
   "python.linting.flake8Enabled": true,
+  "python.linting.lintOnSave": true,
   "python.linting.pep8Enabled": true,
+  "python.linting.pylintPath": "/usr/local/bin/pylint",
+  "python.linting.pylintArgs": [
+    "--errors-only",
+    "--disable=E0401"
+  ],
   "python.linting.mypyEnabled": true,
   "python.linting.mypyPath": "/usr/local/bin/mypy",
   "python.linting.mypyArgs": [
@@ -28,6 +34,7 @@
       88
     ]
   },
+  "scm.diffDecorations": "none",
   "vim.hlsearch": true,
   "window.zoomLevel": 0,
   "workbench.startupEditor": "newUntitledFile",
