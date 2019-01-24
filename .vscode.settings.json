@@ -32,6 +32,7 @@
   },
   "scm.diffDecorations": "none",
   "vim.hlsearch": true,
+  "vim.autoindent": false,
   "window.zoomLevel": 0,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.enablePreview": false,
