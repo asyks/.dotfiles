@@ -9,7 +9,7 @@ main () {
   # zsh
   ln -fs ${DIR}/.zshrc ${HOME}/.zshrc
   ln -fs ${DIR}/.l.profile ${HOME}/.l.profile
-  dn -fs ${DIR}/.d.profide ${HOME}/.d.profide
+  ln -fs ${DIR}/.d.profide ${HOME}/.d.profide
 
   # git
   ln -fs ${DIR}/.gitconfig ${HOME}/.gitconfig
