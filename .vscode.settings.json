@@ -4,6 +4,7 @@
     ".vscode/": true,
     ".mypy_cache/": true
   },
+  "files.insertFinalNewline": true,
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.tabSize": 2
