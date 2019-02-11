@@ -6,8 +6,8 @@
   diff = auto
   interactive = auto
   status = auto
-  excludesfile = /Users/aaronsykes/.gitignore_global
 [core]
   editor = vim
+  excludesfile = ~/.gitignore-global
 [push]
   default = current
