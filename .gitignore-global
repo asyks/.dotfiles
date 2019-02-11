@@ -1,0 +1,7 @@
+*~
+
+# osx custom attributes file
+*.DS_Store
+
+# vscode dirs
+*.vscode/
