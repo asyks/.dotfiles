@@ -13,7 +13,7 @@ main () {
 
   # git
   ln -fs ${DIR}/.gitconfig ${HOME}/.gitconfig
-  ln -fs ${DIR}/.gitignore_global ${HOME}/.gitignore_global
+  ln -fs ${DIR}/.gitignore-global ${HOME}/.gitignore-global
 
   # tmux
   ln -fs ${DIR}/.tmux.conf ${HOME}/.tmux.conf
