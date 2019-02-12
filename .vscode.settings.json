@@ -15,9 +15,9 @@
   "python.linting.flake8Enabled": true,
   "python.linting.lintOnSave": true,
   "python.linting.pep8Enabled": true,
-  "python.linting.pylintPath": "/usr/local/bin/pylint",
+  "python.linting.pylintPath": "${env:HOME}/.pyenv/shims/pylint",
   "python.linting.mypyEnabled": true,
-  "python.linting.mypyPath": "/usr/local/bin/mypy",
+  "python.linting.mypyPath": "${env:HOME}/.pyenv/shims/mypy",
   "python.linting.mypyArgs": [
     "--quick-and-dirty",
     "--ignore-missing-imports"
@@ -35,7 +35,7 @@
   "vim.hlsearch": true,
   "vim.autoindent": false,
   "window.zoomLevel": 0,
-  "workbench.startupEditor": "newUntitledFile",
+  "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false
 }
