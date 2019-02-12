@@ -4,30 +4,38 @@
     ".vscode/": true,
     ".mypy_cache/": true
   },
+  "files.insertFinalNewline": true,
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.tabSize": 2
   },
   "python.pythonPath": "${env:HOME}/.pyenv/shims/python",
+  "python.jediEnabled": false,
   "python.linting.enabled": true,
-  "python.linting.lintOnSave": false,
   "python.linting.flake8Enabled": true,
+  "python.linting.lintOnSave": true,
   "python.linting.pep8Enabled": true,
+  "python.linting.pylintPath": "${env:HOME}/.pyenv/shims/pylint",
   "python.linting.mypyEnabled": true,
-  "python.linting.mypyPath": "/usr/local/bin/mypy",
+  "python.linting.mypyPath": "${env:HOME}/.pyenv/shims/mypy",
   "python.linting.mypyArgs": [
-    "--quick-and-dirty"
+    "--quick-and-dirty",
+    "--ignore-missing-imports"
   ],
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "${env:HOME}/Library/Python/3.7/bin/black",
   "[python]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.tabSize": 4,
     "editor.rulers": [
       88
     ]
   },
+  "scm.diffDecorations": "none",
   "vim.hlsearch": true,
+  "vim.autoindent": false,
   "window.zoomLevel": 0,
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false
 }
