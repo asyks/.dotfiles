@@ -18,10 +18,6 @@ main () {
   # tmux
   ln -fs ${DIR}/.tmux.conf ${HOME}/.tmux.conf
 
-  # vim
-  ln -fs ${DIR}/.vimrc ${HOME}/.vimrc
-  ln -fs ${DIR}/.asykes.vim ${HOME}/.vim/colors/asykes.vim
-
   # vscode
   ln -fs ${DIR}/.vscode.launch.json "${HOME}/.vscode/launch.json"
   if [[ $(uname) == 'Linux' ]]
