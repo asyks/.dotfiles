@@ -43,7 +43,7 @@ fi
 
 # env vars for GCP GKE
 alias k='kubectl'
-alias kstag='k --context=gke_ua-ops-transitional-stag_us-east1-b_gke-1-common-cluster-us-east1 --namespace=web'
+alias kstag='k --context=gke_ua-ops-transitional-stag_us-east1_airship-gke-1 --namespace=web'
 alias kprod='k --context=gke_ua-ops-transitional-prod_us-east1-b_gke-1-common-cluster-us-east1 --namespace=web'
 
 # VSCodeVim key-repeating stuff
