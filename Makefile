@@ -7,6 +7,7 @@ install: link-zsh link-git link-tmux link-vscode
 link-zsh:
 	ln -snf $(CURDIR)/.l.profile $(HOME)/.l.profile
 	ln -snf $(CURDIR)/.d.profile  $(HOME)/.d.profile
+	ln -snf $(CURDIR)/.secrets  $(HOME)/.secrets
 	ln -snf $(CURDIR)/.zshrc $(HOME)/.zshrc
 
 .PHONY: link-git
