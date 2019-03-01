@@ -42,6 +42,10 @@ alias lt='ls -ltFh'
 alias vi='vim'
 alias grep='grep --color'
 
+# Source secrets file
+SECRETS_FILE=$HOME/.secrets
+source $SECRETS_FILE
+
 # Source profile config file if available
 if [[ $(uname) == 'Linux' ]]
 then
@@ -55,10 +59,6 @@ if [ -f $PROFILE_CONFIG_FILE ]
 then
   source $PROFILE_CONFIG_FILE
 fi
-
-# Source secrets file
-SECRETS_FILE=$HOME/.secrets
-source $SECRETS_FILE
 
 # Pyenv setup
 if command -v pyenv 1>/dev/null 2>&1;

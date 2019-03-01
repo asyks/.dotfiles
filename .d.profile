@@ -28,7 +28,6 @@ export ANSIBLE_HOST_KEY_CHECKING=False
 # Airship Artifactory
 export ARTIFACTORY_USER='aaron.sykes'
 export ARTIFACTORY_USERNAME=$ARTIFACTORY_USER  # ensures both web and java tooling get along
-export ARTIFACTORY_API_KEY=''
 export PIP_INDEX_URL=https://$ARTIFACTORY_USER:$ARTIFACTORY_API_KEY@urbanairship.jfrog.io/urbanairship/api/pypi/pypi/simple
 
 # The next line updates PATH for the Google Cloud SDK.
