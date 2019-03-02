@@ -5,3 +5,6 @@
 
 # vscode dirs
 *.vscode/
+
+# mypy cache
+*.mypy_cache/
