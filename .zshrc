@@ -42,9 +42,12 @@ alias lt='ls -ltFh'
 alias vi='vim'
 alias grep='grep --color'
 
-# Source secrets file
+# Source secrets file if available
 SECRETS_FILE=$HOME/.secrets
-source $SECRETS_FILE
+if [ -f $SECRETS_FILE ]
+then
+  source $SECRETS_FILE
+fi
 
 # Source profile config file if available
 if [[ $(uname) == 'Linux' ]]
