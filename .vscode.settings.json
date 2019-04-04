@@ -10,7 +10,7 @@
     "editor.tabSize": 2
   },
   "python.pythonPath": "${env:HOME}/.pyenv/shims/python",
-  "python.jediEnabled": false,
+  "python.jediEnabled": true,
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
   "python.linting.lintOnSave": true,
@@ -35,6 +35,7 @@
   "vim.hlsearch": true,
   "vim.autoindent": false,
   "window.zoomLevel": 0,
+  "window.title": "${activeEditorLong}${separator}${rootName}",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false
