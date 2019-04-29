@@ -46,7 +46,7 @@ alias kstag='k --context=gke_ua-ops-transitional-stag_us-east1_airship-gke-1 --n
 alias kprod='k --context=gke_ua-ops-transitional-prod_us-east1_airship-gke-1 --namespace=web'
 
 # env vars for airship-admin
-export REPOS_DIR = $UA_REPOS_PATH
+export REPOS_DIR=$UA_REPOS_PATH
 
 # VSCodeVim key-repeating stuff
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
