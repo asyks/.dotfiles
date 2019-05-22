@@ -9,6 +9,10 @@
     "editor.formatOnSave": true,
     "editor.tabSize": 2
   },
+  "json.format.enable": true,
+  "[json]": {
+    "editor.tabSize": 2
+  },
   "python.pythonPath": "${env:HOME}/.pyenv/shims/python",
   "python.jediEnabled": true,
   "python.linting.enabled": true,
