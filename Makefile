@@ -1,7 +1,7 @@
 UNAME := $(shell uname -s)
 
 .PHONY: install
-install: link-zsh link-git link-tmux link-vscode
+install: link-zsh link-git link-tmux link-pyenv link-vscode
 
 .PHONY: link-zsh
 link-zsh:
@@ -18,6 +18,10 @@ link-git:
 .PHONY: link-tmux
 link-tmux:
 	ln -snf $(CURDIR)/.tmux.conf $(HOME)/.tmux.conf
+
+.PHONY: link-pyenv
+link-pyenv:
+	ln -snf $(CURDIR)/.python-version $(HOME)/.python-version
 
 .PHONY: link-vscode
 link-vscode:
