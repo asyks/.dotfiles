@@ -42,5 +42,6 @@
   "window.title": "${activeEditorLong}${separator}${rootName}",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
-  "workbench.editor.enablePreviewFromQuickOpen": false
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "keyboard.touchbar.enabled": false
 }
