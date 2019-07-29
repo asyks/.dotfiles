@@ -9,8 +9,12 @@
     "editor.formatOnSave": true,
     "editor.tabSize": 2
   },
+  "json.format.enable": true,
+  "[json]": {
+    "editor.tabSize": 2
+  },
   "python.pythonPath": "${env:HOME}/.pyenv/shims/python",
-  "python.jediEnabled": false,
+  "python.jediEnabled": true,
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
   "python.linting.lintOnSave": true,
@@ -23,9 +27,9 @@
     "--ignore-missing-imports"
   ],
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "${env:HOME}/Library/Python/3.7/bin/black",
+  "python.formatting.blackPath": "${env:HOME}/.pyenv/shims/black",
   "[python]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.tabSize": 4,
     "editor.rulers": [
       88
@@ -35,7 +39,9 @@
   "vim.hlsearch": true,
   "vim.autoindent": false,
   "window.zoomLevel": 0,
+  "window.title": "${activeEditorLong}${separator}${rootName}",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
-  "workbench.editor.enablePreviewFromQuickOpen": false
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "keyboard.touchbar.enabled": false
 }
