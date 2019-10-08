@@ -49,3 +49,6 @@ alias keucs='k --context=gke_ua-ops-transitional-eucs_europe-west1_airship-gke-1
 
 # vscodevim key-repeating stuff
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
+# airship docker-compose timeout (for webpack)
+export COMPOSE_HTTP_TIMEOUT=500

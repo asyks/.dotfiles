@@ -23,7 +23,7 @@
   "python.linting.mypyEnabled": true,
   "python.linting.mypyPath": "${env:HOME}/.pyenv/shims/mypy",
   "python.linting.mypyArgs": [
-    "--ignore-missing-imports"
+    "--show-error-codes"
   ],
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "${env:HOME}/.pyenv/shims/black",
