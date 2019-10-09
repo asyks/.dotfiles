@@ -34,6 +34,28 @@
       88
     ]
   },
+  "githubPullRequests.queries": [
+    {
+      "label": "Waiting For My Review",
+      "query": "is:open review-requested:${user}"
+    },
+    {
+      "label": "Created By Me",
+      "query": "is:open author:${user}"
+    },
+    {
+      "label": "web-py",
+      "query": "is:open label:web-py review:required -reviewed-by:${user}"
+    },
+    {
+      "label": "web-js",
+      "query": "is:open label:web-js review:required -reviewed-by:${user}"
+    },
+    {
+      "label": "Already reviewed",
+      "query": "is:open reviewed-by:${user}"
+    }
+  ],
   "scm.diffDecorations": "none",
   "vim.hlsearch": true,
   "vim.autoindent": false,
