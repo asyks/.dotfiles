@@ -41,6 +41,7 @@ alias lr='ls -tRFh'
 alias lt='ls -ltFh'
 alias vi='vim'
 alias grep='grep --color'
+alias docker-clean='docker rm $(docker ps -a -q); docker image prune'
 
 # Source secrets file if available
 SECRETS_FILE=$HOME/.secrets
