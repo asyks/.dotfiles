@@ -25,7 +25,6 @@ link-pyenv:
 
 .PHONY: link-vscode
 link-vscode:
-	ln -snf $(CURDIR)/.vscode.launch.json "$(HOME)/.vscode/launch.json"
 ifeq ($(UNAME),Linux)
 	ln -snf $(CURDIR)/.vscode.settings.json "$(HOME)/.config/Code/User/settings.json" 
 	ln -snf $(CURDIR)/.vscode.keybindings.json "$(HOME)/.config/Code/User/keybindings.json" 

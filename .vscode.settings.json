@@ -13,6 +13,12 @@
   "[json]": {
     "editor.tabSize": 2
   },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
   "python.pythonPath": "${env:HOME}/.pyenv/shims/python",
   "python.jediEnabled": true,
   "python.linting.enabled": true,
