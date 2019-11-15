@@ -48,7 +48,6 @@ alias kprod='k --context=gke_ua-ops-transitional-prod_us-east1_airship-gke-1 --n
 alias keucs='k --context=gke_ua-ops-transitional-eucs_europe-west1_airship-gke-1 --namespace=web'
 
 # aliases for webenv
-alias airship-run='docker-compose run --rm --publish 5678:5678 airship'
 alias airship-test-run='docker-compose run --rm --publish 5678:5678 airship pytest --disable-pytest-warnings --enable-debugger'
 
 # vscodevim key-repeating stuff
