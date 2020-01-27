@@ -28,6 +28,7 @@ SAVEHIST=5000
 setopt incappendhistory
 setopt sharehistory
 setopt extendedhistory
+setopt interactivecomments
 
 # Localization
 LC_ALL=$LANG
