@@ -55,3 +55,9 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # airship docker-compose timeout (for webpack)
 export COMPOSE_HTTP_TIMEOUT=500
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/aaron.sykes/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/aaron.sykes/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/aaron.sykes/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/aaron.sykes/google-cloud-sdk/completion.zsh.inc'; fi
