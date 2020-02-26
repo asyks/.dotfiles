@@ -19,13 +19,12 @@
   "[typescriptreact]": {
     "editor.formatOnSave": true
   },
-  "python.pythonPath": "${env:HOME}/.pyenv/shims/python",
-  "python.jediEnabled": true,
   "python.linting.enabled": true,
+  "python.pythonPath": "${env:HOME}/.pyenv/shims/python",
+  "python.linting.pylintPath": "${env:HOME}/.pyenv/shims/pylint",
   "python.linting.flake8Enabled": true,
   "python.linting.lintOnSave": true,
   "python.linting.pycodestyleEnabled": true,
-  "python.linting.pylintPath": "${env:HOME}/.pyenv/shims/pylint",
   "python.linting.mypyEnabled": true,
   "python.linting.mypyPath": "${env:HOME}/.pyenv/shims/mypy",
   "python.linting.mypyArgs": [
@@ -35,10 +34,14 @@
   "python.formatting.blackPath": "${env:HOME}/.pyenv/shims/black",
   "[python]": {
     "editor.formatOnSave": true,
+    "editor.formatOnSaveTimeout": 4000,
     "editor.tabSize": 4,
     "editor.rulers": [
       88
-    ]
+    ],
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   },
   "githubPullRequests.queries": [
     {
