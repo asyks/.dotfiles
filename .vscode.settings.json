@@ -30,7 +30,8 @@
   "python.linting.pylintPath": "${env:HOME}/.pyenv/shims/pylint",
   "python.linting.flake8Enabled": true,
   "python.linting.lintOnSave": true,
-  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.pydocstyleEnabled": true,
   "python.linting.mypyEnabled": true,
   "python.linting.mypyPath": "${env:HOME}/.pyenv/shims/mypy",
   "python.linting.mypyArgs": [
