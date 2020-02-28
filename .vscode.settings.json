@@ -41,7 +41,6 @@
   "python.formatting.blackPath": "${env:HOME}/.pyenv/shims/black",
   "[python]": {
     "editor.formatOnSave": true,
-    "editor.formatOnSaveTimeout": 4000,
     "editor.tabSize": 4,
     "editor.rulers": [
       88
