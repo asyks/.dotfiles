@@ -46,7 +46,7 @@
       88
     ],
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": false
     }
   },
   "githubPullRequests.queries": [
