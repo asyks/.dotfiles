@@ -1,5 +1,7 @@
 {
   "editor.minimap.enabled": false,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
   "files.exclude": {
     ".vscode/": true,
     ".mypy_cache/": true
