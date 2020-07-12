@@ -6,7 +6,7 @@ promptinit
 unsetopt MULTIOS
 
 # Prompt
-PROMPT="%F{green}%1~ > %f"
+PROMPT="%F{magenta}%1~ > %f"
  
 # Basic options
 setopt autocd
