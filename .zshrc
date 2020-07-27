@@ -51,18 +51,25 @@ then
   source $SECRETS_FILE
 fi
 
-# Source profile config file if available
+# Source os specific profile config file if available
 if [[ $(uname) == 'Linux' ]]
 then
-    PROFILE_CONFIG_FILE=$HOME/.l.profile
+    OS_PROFILE_CONFIG_FILE=$HOME/.l.profile
 elif [[ $(uname) == 'Darwin' ]]
 then
-    PROFILE_CONFIG_FILE=$HOME/.d.profile
+    OS_PROFILE_CONFIG_FILE=$HOME/.d.profile
 fi
 
-if [ -f $PROFILE_CONFIG_FILE ]
+if [ -f $OS_PROFILE_CONFIG_FILE ]
 then
-  source $PROFILE_CONFIG_FILE
+  source $OS_PROFILE_CONFIG_FILE
+fi
+
+# Source airship profile config file if available
+AS_PROFILE_CONFIG_FILE=$HOME/.a.profile
+if [ -f $AS_PROFILE_CONFIG_FILE ]
+then
+  source $AS_PROFILE_CONFIG_FILE
 fi
 
 # Pyenv setup
