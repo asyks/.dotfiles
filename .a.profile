@@ -22,16 +22,6 @@ export ARTIFACTORY_USER='aaron.sykes'
 export ARTIFACTORY_USERNAME=$ARTIFACTORY_USER  # ensures both web and java tooling get along
 export PIP_INDEX_URL=https://$ARTIFACTORY_USER:$ARTIFACTORY_API_KEY@urbanairship.jfrog.io/urbanairship/api/pypi/pypi/simple
 
-# the next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/aaron.sykes/Downloads/google-cloud-sdk/path.zsh.inc' ];
-then source '/Users/aaron.sykes/Downloads/google-cloud-sdk/path.zsh.inc';
-fi
-
-# the next line enables shell command completion for gcloud.
-if [ -f '/Users/aaron.sykes/Downloads/google-cloud-sdk/completion.zsh.inc' ];
-then source '/Users/aaron.sykes/Downloads/google-cloud-sdk/completion.zsh.inc';
-fi
-
 # aliases for GCP GKE
 alias k='kubectl'
 alias kstag='k --context=gke_ua-ops-transitional-stag_us-east1_airship-gke-1 --namespace=web'
@@ -43,9 +33,3 @@ alias airship-test-run='docker-compose run --rm --publish 5678:5678 airship pyte
 
 # airship docker-compose timeout (for webpack)
 export COMPOSE_HTTP_TIMEOUT=500
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/aaron.sykes/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/aaron.sykes/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/aaron.sykes/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/aaron.sykes/google-cloud-sdk/completion.zsh.inc'; fi
