@@ -7,6 +7,14 @@
     ".mypy_cache/": true
   },
   "files.insertFinalNewline": true,
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/**"
+  ],
+  "C_Cpp.default.defines": [],
+  "C_Cpp.default.compilerPath": "/bin/gcc",
+  "C_Cpp.default.cStandard": "gnu17",
+  "C_Cpp.default.cppStandard": "gnu++14",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.tabSize": 2
