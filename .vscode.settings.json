@@ -37,7 +37,6 @@
     {"language": "typescriptreact", "autoFix": true}
   ],
   "python.linting.enabled": true,
-  "python.pythonPath": "${env:HOME}/.pyenv/shims/python",
   "python.testing.pytestEnabled": true,
   "python.testing.autoTestDiscoverOnSaveEnabled": false,
   "python.linting.pylintPath": "${env:HOME}/.pyenv/shims/pylint",
@@ -92,5 +91,6 @@
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "keyboard.touchbar.enabled": false
+  "keyboard.touchbar.enabled": false,
+  "python.defaultInterpreterPath": "${env:HOME}/.pyenv/shims/python"
 }
