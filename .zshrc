@@ -90,3 +90,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # Go setup
 export PATH="$PATH:/usr/local/go/bin"
+export GOPATH="$HOME/go"
