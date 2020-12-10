@@ -1,7 +1,7 @@
 UNAME := $(shell uname -s)
-DISABLE_PROFILE_A := ${DISABLE_PROFILE_A}
+ENABLE_PROFILE_A := ${ENABLE_PROFILE_A}
 
-$(warning $(DISABLE_PROFILE_A))
+$(warning $(ENABLE_PROFILE_A))
 
 .PHONY: install
 install: link-zsh link-git link-tmux link-pyenv link-vscode
@@ -12,7 +12,7 @@ link-zsh:
 	ln -snf $(CURDIR)/.d.profile  $(HOME)/.d.profile
 	ln -snf $(CURDIR)/.secrets  $(HOME)/.secrets
 	ln -snf $(CURDIR)/.zshrc $(HOME)/.zshrc
-ifneq ($(DISABLE_PROFILE_A), true)
+ifeq ($(ENABLE_PROFILE_A), true)
 	ln -snf $(CURDIR)/.a.profile  $(HOME)/.a.profile
 endif
 
