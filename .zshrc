@@ -16,10 +16,10 @@ setopt completeinword
 unsetopt caseglob
  
 # Auto complete options
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
-zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
-zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
+zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
+zstyle ":completion:*:descriptions" format "%U%B%d%b%u"
+zstyle ":completion:*:warnings" format "%BSorry, no matches for: %d%b"
+zstyle ":completion:*:killall:*" command "ps -u $USER -o cmd"
  
 # History
 HISTFILE=~/.zsh-histfile
@@ -34,15 +34,15 @@ setopt interactivecomments
 LC_ALL=$LANG
  
 # Aliases
-alias ls='ls'
-alias ll='ls -l'
-alias l='ls -lFh'
-alias la='ls -lAFh'
-alias lr='ls -tRFh'
-alias lt='ls -ltFh'
-alias vi='vim'
-alias grep='grep --color'
-alias docker-clean='docker rm $(docker ps -a -q); docker image prune'
+alias ls="ls"
+alias ll="ls -l"
+alias l="ls -lFh"
+alias la="ls -lAFh"
+alias lr="ls -tRFh"
+alias lt="ls -ltFh"
+alias vi="vim"
+alias grep="grep --color"
+alias docker-clean="docker rm $(docker ps -a -q); docker image prune"
 
 # Source secrets file if available
 [ -f "$HOME/.secrets" ] && . "$HOME/.secrets"
