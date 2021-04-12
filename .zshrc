@@ -45,13 +45,13 @@ alias grep='grep --color'
 alias docker-clean='docker rm $(docker ps -a -q); docker image prune'
 
 # Source secrets file if available
-[ -f $HOME/.secrets ] && . $HOME/.secrets
+[ -f "$HOME/.secrets" ] && . "$HOME/.secrets"
 
 # Source os specific profile config file if available
-if [ $(uname) = 'Linux' ]; then
-    OS_PROFILE_CONFIG_FILE=$HOME/.l.profile
-elif [ $(uname) = 'Darwin' ]; then
-    OS_PROFILE_CONFIG_FILE=$HOME/.d.profile
+if [ $(uname) = "Linux" ]; then
+    OS_PROFILE_CONFIG_FILE="$HOME/.l.profile"
+elif [ $(uname) = "Darwin" ]; then
+    OS_PROFILE_CONFIG_FILE="$HOME/.d.profile"
 fi
 
 [ -f $OS_PROFILE_CONFIG_FILE ] && . $OS_PROFILE_CONFIG_FILE
@@ -64,8 +64,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
-if command -v pyenv 1>/dev/null 2>&1;
-then
+if [ command -v pyenv 1>/dev/null 2>&1 ]; then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi
