@@ -45,32 +45,19 @@ alias grep='grep --color'
 alias docker-clean='docker rm $(docker ps -a -q); docker image prune'
 
 # Source secrets file if available
-SECRETS_FILE=$HOME/.secrets
-if [ -f $SECRETS_FILE ]
-then
-  source $SECRETS_FILE
-fi
+[ -f $HOME/.secrets ] && . $HOME/.secrets
 
 # Source os specific profile config file if available
-if [[ $(uname) == 'Linux' ]]
-then
+if [ $(uname) = 'Linux' ]; then
     OS_PROFILE_CONFIG_FILE=$HOME/.l.profile
-elif [[ $(uname) == 'Darwin' ]]
-then
+elif [ $(uname) = 'Darwin' ]; then
     OS_PROFILE_CONFIG_FILE=$HOME/.d.profile
 fi
 
-if [ -f $OS_PROFILE_CONFIG_FILE ]
-then
-  source $OS_PROFILE_CONFIG_FILE
-fi
+[ -f $OS_PROFILE_CONFIG_FILE ] && . $OS_PROFILE_CONFIG_FILE
 
 # Source airship profile config file if available
-AS_PROFILE_CONFIG_FILE=$HOME/.a.profile
-if [ -f $AS_PROFILE_CONFIG_FILE ]
-then
-  source $AS_PROFILE_CONFIG_FILE
-fi
+[ -f $HOME/.a.profile ] && . $HOME/.a.profile
 
 # Pyenv setup
 export PYENV_ROOT="$HOME/.pyenv"
