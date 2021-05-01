@@ -1,6 +1,5 @@
 # Autoload prompt
-autoload -U promptinit
-promptinit
+[ $(autoload -Uz promptinit) ] && promptinit
 
 # Turn off MULTIOS
 unsetopt MULTIOS
