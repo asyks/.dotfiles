@@ -6,6 +6,8 @@ unsetopt MULTIOS
 
 # Prompt
 PROMPT="%F{magenta}%1~ > %f"
+# Add newline before each prompt
+precmd() { print "" }
  
 # Basic options
 setopt autocd
