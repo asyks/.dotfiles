@@ -86,11 +86,21 @@
   "scm.diffDecorations": "none",
   "vim.hlsearch": true,
   "vim.autoindent": false,
-  "window.zoomLevel": 0,
   "window.title": "${activeEditorLong}${separator}${rootName}",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "keyboard.touchbar.enabled": false,
-  "python.defaultInterpreterPath": "${env:HOME}/.pyenv/shims/python"
+  "python.defaultInterpreterPath": "${env:HOME}/.pyenv/shims/python",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "editor.cursorStyle": "line",
+	"editor.insertSpaces": true,
+	"editor.lineNumbers": "on",
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.wordWrap": "off"
 }
