@@ -51,6 +51,7 @@
   ],
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "${env:HOME}/.pyenv/shims/black",
+  "python.defaultInterpreterPath": "${env:HOME}/.pyenv/shims/python",
   "[python]": {
     "editor.formatOnSave": true,
     "editor.tabSize": 4,
