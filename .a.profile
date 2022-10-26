@@ -33,3 +33,6 @@ alias airship-test-run='docker-compose run --rm --publish 5678:5678 airship pyte
 
 # airship docker-compose timeout (for webpack)
 export COMPOSE_HTTP_TIMEOUT=500
+
+# gke auth plugin setting
+export USE_GKE_GCLOUD_AUTH_PLUGIN=False
