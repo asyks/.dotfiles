@@ -35,4 +35,4 @@ alias airship-test-run='docker-compose run --rm --publish 5678:5678 airship pyte
 export COMPOSE_HTTP_TIMEOUT=500
 
 # gke auth plugin setting
-export USE_GKE_GCLOUD_AUTH_PLUGIN=False
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
