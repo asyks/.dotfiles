@@ -87,6 +87,24 @@
   "scm.diffDecorations": "none",
   "vim.hlsearch": true,
   "vim.autoindent": false,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "u"
+      ],
+      "commands": [
+        "undo"
+      ]
+    },
+    {
+      "before": [
+        "c-r"
+      ],
+      "commands": [
+        "redo"
+      ]
+    }
+  ],
   "window.title": "${activeEditorLong}${separator}${rootName}",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
