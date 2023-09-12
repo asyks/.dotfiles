@@ -93,6 +93,9 @@
       "commands": ["redo"]
     }
   ],
+  "vim.handleKeys": {
+    "<C-p>": false
+  },
   "window.title": "${activeEditorLong}${separator}${rootName}",
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
