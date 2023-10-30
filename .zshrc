@@ -1,25 +1,23 @@
-# Autoload prompt
+# Autoload promptinit
 [ $(autoload -Uz promptinit) ] && promptinit
+# Autoload vcs_info (version control information)
+autoload -Uz vcs_info
 
+# Add newline before each prompt (except the first)
+precmd() { precmd() { print "" } }
+# Run vcs_info before each prompt
+precmd() { vcs_info }
+
+# Allow command substitution in prompt
+setopt PROMPT_SUBST
 # Turn off MULTIOS
 unsetopt MULTIOS
 
-# Retrieve current git branch
-function git_branch() {
-  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
-  if [[ $branch == "" ]]; then
-    :
-  else
-    echo "[$branch]"
-  fi
-}
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '[%b]'
 
-# Allow command substitution in prompt
-setopt prompt_subst
-# Prompt
-PROMPT="%F{magenta}%1~ $(git_branch)> %f"
-# Add newline before each prompt (except the first)
-precmd() { precmd() { print "" } }
+# Setup Prompt
+PROMPT='%F{magenta}%1~ ${vcs_info_msg_0_}-> %f'
  
 # Basic options
 setopt autocd
