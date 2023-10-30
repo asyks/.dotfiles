@@ -4,8 +4,20 @@
 # Turn off MULTIOS
 unsetopt MULTIOS
 
+# Retrieve current git branch
+function git_branch() {
+  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  if [[ $branch == "" ]]; then
+    :
+  else
+    echo "[$branch]"
+  fi
+}
+
+# Allow command substitution in prompt
+setopt prompt_subst
 # Prompt
-PROMPT="%F{magenta}%1~ > %f"
+PROMPT="%F{magenta}%1~ $(git_branch) > %f"
 # Add newline before each prompt (except the first)
 precmd() { precmd() { print "" } }
  
