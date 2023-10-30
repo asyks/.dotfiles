@@ -17,7 +17,7 @@ function git_branch() {
 # Allow command substitution in prompt
 setopt prompt_subst
 # Prompt
-PROMPT="%F{magenta}%1~ $(git_branch) > %f"
+PROMPT="%F{magenta}%1~ $(git_branch)> %f"
 # Add newline before each prompt (except the first)
 precmd() { precmd() { print "" } }
  
