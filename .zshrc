@@ -17,7 +17,7 @@ unsetopt MULTIOS
 zstyle ':vcs_info:git:*' formats '[%b]'
 
 # Setup Prompt
-PROMPT='%F{magenta}%1~ ${vcs_info_msg_0_}-> %f'
+PROMPT='%F{green}%1~ ${vcs_info_msg_0_}-> %f'
  
 # Basic options
 setopt autocd
