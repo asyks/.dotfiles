@@ -22,6 +22,7 @@ export ARTIFACTORY_USER='aaron.sykes'
 export ARTIFACTORY_USERNAME=$ARTIFACTORY_USER  # ensures both web and java tooling get along
 export UV_INDEX_ARTIFACTORY_USERNAME=$ARTIFACTORY_USER
 export PIP_INDEX_URL=https://$ARTIFACTORY_USER:$ARTIFACTORY_API_KEY@urbanairship.jfrog.io/urbanairship/api/pypi/pypi/simple
+export UV_INDEX_URL=https://$ARTIFACTORY_USERNAME:$ARTIFACTORY_API_KEY@urbanairship.jfrog.io/urbanairship/api/pypi/pypi/simple
 
 # aliases for GCP GKE
 alias k='kubectl'
